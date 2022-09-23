@@ -161,9 +161,9 @@ simpleui
 # settings
 settings.py
 
-static/
-conf/
-logs/
+/static
+/conf
+/logs
 
 utils/*.sh
 utils/*.py
