@@ -6,7 +6,7 @@
 
 在项目根目录，执行 ``./install.sh`` 即可自动安装部署
 
-在最小化安装的 CentOS 7 / RHEL 7 上测试通过，无需公网。
+在最小化安装的 CentOS 7 / RHEL 7 上测试通过，无需公网
 
 .. important ::
 
