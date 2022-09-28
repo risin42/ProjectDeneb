@@ -1,0 +1,4 @@
+# PATH/TO/PROJECT
+PROJECT_DIR = "/approot1/projectSQL"
+APP_NAME = "sql_platform"
+DEFAULT_PASSWORD = "PASSWORD"
