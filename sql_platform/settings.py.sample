@@ -230,7 +230,7 @@ EXPLORER_SQL_BLACKLIST = (
     "RENAME ",
     "DROP",
     "TRUNCATE",
-    "INSERT INTO",
+    "INSERT",
     "UPDATE",
     "REPLACE",
     "DELETE",
