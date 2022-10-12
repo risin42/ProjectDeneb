@@ -16,7 +16,7 @@
 参数化查询
 ----------
 
-- 支持参数化查询
+- 支持图形化界面的参数化查询
 
 用法： 
 
@@ -26,7 +26,7 @@
 
  建议在保存语句时添加默认值，否则会因为参数为空导致数据库返回语法错误提示（不影响保存）
 
-举例：
+例：
 
 1. 新增查询
 
@@ -36,7 +36,7 @@
   FROM explorer_querylog
   WHERE run_by_user_id=$$id:1$$
 
-2. 保存并执行
+2. 保存
 
 3. 在查询列表中打开刚刚保存的语句
 
@@ -55,6 +55,25 @@
 .. note::
 
   从查询列表复用查询时，需输入原查询描述，否则会保存为新查询
+
+使用 API
+---------
+
+- 可通过 API 调用已保存的查询语句
+
+在 ``settings.py`` 中配置 ``EXPLORER_TOKEN_AUTH_ENABLED = True`` 以及 ``EXPLORER_TOKEN``
+
+例：
+
+.. code-block:: console
+
+  curl -H "X-API-TOKEN <YOUR_TOKEN>" http://example.com/<query_id>/stream?format=csv
+
+或者将 token 作为参数传入
+
+.. code-block:: console
+
+  curl http://example.com/<query_id>/stream?format=csv\&token=${YOUR_TOKEN}\&params=field:run_by_user_id\|table:explorer_querylog
 
 导出
 ----
