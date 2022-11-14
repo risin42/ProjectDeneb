@@ -175,8 +175,8 @@
 
     如果已有低版本 Python3，使用 ``make altinstall`` 安装
 
---enable-optimizations                      性能选项，用 PROFILE_TASK 启用以配置文件主导的优化（PGO），会增加编译时间带来永久性能提升
---with-lto                                  性能选项，用 PROFILE_TASK 启用链接时间优化（LTO），会增加编译时间带来永久性能提升
+--enable-optimizations                      性能选项，启用以配置文件主导的优化（PGO），会增加编译时间带来永久性能提升
+--with-lto                                  性能选项，启用链接时间优化（LTO），会增加编译时间带来永久性能提升
 --enable-loadable-sqlite-extensions         可选，如果需要新版本 SQLite3，先编译安装 SQLite3 再重新编译 Python3
 -j                                          使用并发， ``$(nproc)`` 表示 CPU 核心数
 
