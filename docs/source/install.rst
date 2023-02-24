@@ -286,7 +286,7 @@
 
 - 上传软件包
 
-上传 ``pypi.tgz`` 至服务器 ``/opt`` 目录
+上传 ``python_packages.tgz`` 至服务器 ``/opt`` 目录
 
 - 解压
 
