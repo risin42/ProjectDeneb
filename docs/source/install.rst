@@ -293,7 +293,7 @@
 .. code-block:: console
 
     cd /opt
-    tar -zxf python_packages && cd pypi; ls -lrth
+    tar -zxf python_packages.tgz && cd pypi; ls -lrth
 
 - 使用 ``pip`` 离线安装
 
